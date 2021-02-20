@@ -128,6 +128,7 @@ function checkArray(){
 // event listener for so when you click save button it works. Also runs render score on click. 
 saveButton.addEventListener("click", function(event){
     event.preventDefault()
+    saveButton.classList.add("hidden")
     renderScore()
 })
 
