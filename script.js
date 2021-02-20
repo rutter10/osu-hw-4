@@ -2,7 +2,7 @@
 let currentQuestionIndex
 
 // Variables for functions
-var sec = 600
+var sec = 400
 var score = 0
 
 // Variables that getElementIds from the HTML to use as a variable in Javascript
@@ -27,7 +27,7 @@ function startGame() {
     startButton.classList.add("hidden")
     currentQuestionIndex = 0
     questionContainerEl.classList.remove("hidden")
-    sec = 600
+    sec = 400
     time = setInterval(myTimer, 1000);
     score = 0
     function myTimer() {
