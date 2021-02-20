@@ -1,0 +1,94 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Creating variables for background-colors. Colors are dependent on if the user selects the correct answer */
+/* :root {
+    --hue-neutral: hsl(199, 100%, 50%);
+    --hue-wrong: red;
+    --hue-correct: green;
+} */
+
+
+body {
+    /* --hue: var(--hue-neutral); */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: var(--hue); */
+}
+
+
+
+/* This give the container a card effect. This is not necessary for the minimum requirement. */
+.container{
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    /* border-radius: 5px;
+    padding: 10px; 
+    box-shadow: 0 0 10px 2px; */
+}
+
+.btn-grid{
+    display: grid;
+    gap: 10px;
+    margin: 20px 0 20px 0;
+}
+
+
+.btn{
+    background-color:rgb(130, 151, 243);
+    border: 1px solid rgb(130, 151, 243);
+    border-radius: 5px;
+}
+
+.btn:hover{
+    border-color: black;
+    border-width: 2px;
+}
+
+.start-btn{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.save-btn{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.timer {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+
+/* body.correct{
+    --hue: var(--hue-correct);
+    background-color: var(--hue);
+}
+
+body.wrong{
+    --hue: var(--hue-wrong);
+    background-color: var(--hue); 
+} */
+

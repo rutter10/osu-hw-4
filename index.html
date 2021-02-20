@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="C:\Users\rutte\Desktop\osu-homework\s2\style.css" rel = "stylesheet">
+    <script defer src=C:\Users\rutte\Desktop\osu-homework\s2\script.js></script>
+    <title>Quiz App</title>
+</head>
+<header>
+  
+</header>
+<body>
+    
+    <!-- Container that holds the question, controls buttons, and answers selections -->
+    <div class="container">
+        <!-- Nested Container 1: The section that holds the asked question text -->
+        <div class = timer-container>
+            <h1 class = "timer">Time: <span id = "timer" class = "hidden"></span></h1>
+        </div>
+        <div id ="question-container" class ="hidden">
+            <div id="question">Question</div>
+            <!-- Container that holds answer buttons the user can select -->
+                <div id="answer-buttons" class = "btn-grid">
+                    <button class="btn">Answer 1</button>
+                    <button class="btn">Answer 2</button>
+                    <button class="btn">Answer 3</button>
+                    <button class="btn">Answer 4</button>
+                </div>
+            </div>        
+        <!-- Container for the controls buttons. Start the quiz / go to the next question -->
+        <div class="start">
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="save-btn" class="save-btn btn hidden">Save</button>
+        </div>
+    </div>
+    <!-- Container for the player name and last quiz score -->
+    <div id = "card">
+        <h2>Last Saved Score</h2>
+        <p>Player's Name: <span id="player-name"></span></p>
+        <p>Score <span id="saved-score"></span></p>
+    </div>
+</body>
+</html>
